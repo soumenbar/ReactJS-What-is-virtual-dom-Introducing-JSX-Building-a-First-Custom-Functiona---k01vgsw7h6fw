@@ -16,11 +16,9 @@ export default function Show(props){
      const length=props.data.length;
      function restart(){
         setCount(0);
-        setResetflg(false)
+        setResetflg(true);
         setNextflg(false);
-        setPrevflg(true);
-
-       
+        setPrevflg(true); 
      }
      function previous(){
         if(count>0){
@@ -30,7 +28,7 @@ export default function Show(props){
             
            // console.log(count);
          }
-         if(count==1){
+         if(count==1 ){
            // console.log(count);
             setPrevflg(true);
             setResetflg(true);
