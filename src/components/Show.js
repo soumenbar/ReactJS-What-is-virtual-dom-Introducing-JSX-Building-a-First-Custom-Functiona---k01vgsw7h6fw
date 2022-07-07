@@ -55,13 +55,15 @@ export default function Show(props){
     
     return(
     <> 
-       <div>
+       <div id="slide">
             <h1 data-testid="title">{props.data[count].title}</h1>
              <p data-testid="text">{props.data[count].text}</p>
        </div> 
+       <div>
         <button data-testid="button-restart" disabled={resetflg} onClick={restart}>Restart</button>
         <button data-testid="button-prev" disabled={prevflg}  onClick={previous}>Prev</button>
         <button data-testid="button-next" disabled={nextflg} onClick={next}>Next</button>
+        </div>
     </>
     );
 }
